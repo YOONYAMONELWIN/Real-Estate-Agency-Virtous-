@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/Screenshot 2022-05-13 121153.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <title>Virtous.com.onsales</title>
+  <style>
+    *{
+    font-family: 'Source Serif Pro', serif;
+      
+         box-sizing: border-box;
+     }
+    
+.header{
+    width: 1498px;
+    height: 100%;
+    background-image: linear-gradient(rgba(22,21,21,0.65), rgba(22,21,21,0.65)),
+    url(images/MicrosoftTeams-image\ \(21\).png);
+     background-size: cover;
+    background-position: center;
+    
+}
+.pages img{
+    width: 100px;
+    height: 90px;
+    margin-left: 90px;
+    border-radius: 45px;
+    box-shadow: 5px -2px 70px -13px rgba(0,0,0,0.74);
+}
+
+
+.pages {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    background-color: rgb(28, 48, 80);
+}
+.pages ul{
+    margin-right: 80px;
+}
+.pages ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    
+}
+.pages ul li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 7px 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+.pages ul li a:hover{
+   color:rgb(255, 255, 255);
+   background-color:rgb(128, 124, 124) ;
+   padding:7px 10px ;
+   border: none;
+}
+
+    
+    
+body {
+   background-color:#f7f7f7;
+  
+}
+/*.btn{
+    
+  
+  border:rgb(0, 0, 0);
+   
+   color: rgb(0, 0, 0);
+   width: 100%;
+   border-radius: 10px;
+  
+    
+
+    text-decoration: none;
+       }*/
+   .btnforp{
+      width: 100%;
+      height: 100%;
+      padding: 0px 13px;
+      
+    
+}
+.btnforp a {
+    text-decoration: none;
+    background-color:rgb(197, 195, 195) ;
+    color: black;
+    border: none;
+    padding: 7px 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    margin: 0 600px;
+    
+    
+  
+   
+   
+    
+  
+   
+    
+   
+}
+.btnforp a:hover{
+    color: #fff;
+    background-color:rgb(128, 124, 124) ;
+    
+    
+}
+
+
+
+.container {
+   width: 478px;
+   height: 400px;
+   margin:10px 10px;
+   background-color: black;
+   background-size: cover;
+   cursor: pointer;
+   box-shadow: 0 0 5px #000;
+  }
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    background: rgba(77, 77, 77, .9);
+    color: #FEF5DF;
+    opacity: 0;
+    transition: all 0.5s;
+  
+    font-family: 'Playfair Display', serif;
+}
+
+
+.items {
+    padding-left: 20px;
+    letter-spacing: 3px;
+}
+
+.head {
+    font-size: 20px;
+    line-height: 40px;
+  
+    transform: translateY(40px);
+   transition: all 0.7s;
+}
+  hr {
+      display: block;
+      width: 0;
+      border: none;
+      border-bottom: solid 2px #FEF5DF;
+      position: absolute;
+      bottom: 0; left:20px;
+      transition: all .5s;
+  }
+
+
+.price {
+     font-size: 22px;
+     line-height: 10px;
+     font-weight: bold;  
+     opacity: 0;
+     transform: translateY(40px);
+     transition: all 0.7s;
+}
+  
+
+
+     
+  i {
+      font-size: 16px;
+  }
+  span {
+      margin-left: 10px;
+  }
+
+
+  .container:hover .overlay {
+       opacity: 1;
+    }
+  .head {
+      transform: translateY(0px);
+
+  }
+
+  
+   hr {
+    width: 75px;
+    transition-delay: 0.4s;
+  }
+  
+  .price {
+    transform: translateY(0px);
+    transition-delay: 0.3s;
+    opacity: 1;
+  }
+  
+ 
+  
+  .img{
+    border-radius: 45px;
+    width: 100px;
+    
+    
+  }
+ 
+  .borderforp{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:transparent;
+    color: #000;
+    text-align: center;
+    margin: 5px;
+    box-shadow:  0 3px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 100px;
+    width: 1490px;
+    font-size: 16.5px;
+    
+  }
+  .borderforp:hover{
+    background-color: rgb(190, 181, 134);
+    border: 2px solid;
+    color: rgb(0, 0, 0);
+  }
+  .footer{
+    /*position:absolute;*/
+    margin: auto;
+    width: 1495px;
+    background-color:rgb(12, 26, 95);
+    color:rgb(255, 252, 252);
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+.footer div{
+    text-align: center;
+}
+.footer div h3{
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight:400;
+}
+.footer .col-1 a{
+    text-decoration: none; 
+    display: block;
+    color: rgba(255, 255, 255, 0.988);
+    text-align: left;
+    margin-bottom: 5px;
+
+}
+
+.footer .col-2{
+    flex-grow: 0.5;
+}
+form input{
+    width: 400px;
+    height: 29px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    outline: none;
+    margin-bottom: 25px;
+}
+form button{
+     background-color: transparent;
+     color: #fff;
+     padding: 5px;
+     border: 2px solid rgb(177, 123, 123);
+     text-decoration: none;
+     border-radius: 20px;
+     font-family: 'Roboto', sans-serif;
+     font-size: 15px;
+     width: 200px;
+     
+    
+    
+
+}
+.formbotton:hover{
+  background-color:burlywood;
+  border: 2px solid;
+  
+}
+.social-links{
+   margin:0 10px 0;
+   font-size: 22px;
+}
+.social-links i:hover{
+   color: rgb(171, 146, 58);
+ }
+ .addressfooter{
+    text-decoration: none;
+    color: #fff;
+   
+
+}
+
+
+
+
+
+
+  
+
+
+  
+  
+ 
+
+
+  </style>
+</head>
+
+
+<body>
+<div class="header">
+  <div class="pages">
+    <a href="index.html">
+      <img src="images/Screenshot 2022-05-13 121153.png" alt="" class="img"></a>
+    
+    <ul><li><a href="index.html">HOME</a></li>
+         <li><a href="#">SALES</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+        <li><a href="about_us.html">ABOUT US</a></li>
+        <li><a href="learnmore.html">MEMBERSHIP</a></li>
+    </ul>
+</div>
+</div>
+<div class="borderforp">
+  <p class="borderforp:hover">Ladies and Gentlemen , we are called Virtous and we provide you guys comfortable homes with full of luxurious interior+ exterior. Finding a home that gives off the warmth along with your family is important so why not come with us and feel the warmth in your newest house for you and your family.</p>
+  <div class="btnforp">
+    <a href="contact_us.html" >Contact Us</a> 
+ </div>
+</div>
+  <table>
+    <tr>
+      <td>
+  <div class="container" style="background-image:url(images/Screenshot\ 2022-05-17\ 205105.png);" >
+ 
+    <div class="overlay">
+      <div class = "items"></div>
+      <div class = "items head">
+        <p>901 Bel Air street,Virtous Housing,Beverly Hills ,Los Angeles ,CA 90077 
+          <br> <br>Price- 6 Million dollars 
+
+        </p>
+        <hr>
+      </div>
+      <div class = "items price">
+        <p>Virtous.com</p>
+        <img src="images/Screenshot 2022-05-13 121153.png" alt="" width="100px" class="img">
+      </div>
+      
+  </div>
+  </div>
+</td>
+<td>
+  <div class="container" style="background-image: url(images/Screenshot\ 2022-05-14\ 194949.png);">
+    <div class="overlay">
+      <div class = "items"></div>
+      <div class = "items head">
+        <p>743 N Beverly Glen Blvd street,Virtous Housing,Beverly Hills,Los Angeles,CA 90077
+          <br> <br>Price- 4.5 Million dollars 
+        </p>
+        <hr>
+      </div>
+      <div class = "items price">
+        <p>Virtous.com</p>
+        <img src="images/Screenshot 2022-05-13 121153.png" alt="" width="100px" class="img">
+      </div>
+      
+  </div>
+  </div>
+</td>
+<td>
+  <div class="container" style="background-image: url(images/Screenshot\ 2022-05-17\ 204653.png);">
+    <div class="overlay">
+      <div class = "items"></div>
+      <div class = "items head">
+        <p>1169 Angelo Dr street,Virtous Housing, Beverly Hills,Los Angeles, CA 90210
+         <br> <br>Price- 2 Billion dollars  </p>
+        <hr>
+      </div>
+      <div class = "items price">
+        <p>Virtous.com</p>
+        <img src="images/Screenshot 2022-05-13 121153.png" alt="" width="100px" class="img">
+      </div>
+      
+  </div>
+  </div>
+</td>
+
+</tr>
+ 
+<tr>
+  <td>
+<div class="container" style="background-image:url(images/Screenshot\ 2022-05-17\ 210735.png) ;">
+<div class="overlay">
+  <div class = "items"></div>
+  <div class = "items head">
+    <p>1190 Angelo Dr street,Virtous Housing, Beverly Hills,Los Angeles, CA 90210
+      <br> <br>Price- 8 Million dollars
+    </p>
+    <hr>
+  </div>
+  <div class = "items price">
+    <p>Virtous.com</p>
+    <img src="images/Screenshot 2022-05-13 121153.png" alt="" width="100px" class="img">
+  </div>
+  
+</div>
+</div>
+</td>
+<td>
+<div class="container" style="background-image:url(images/Screenshot\ 2022-05-17\ 205634.png) ;">
+<div class="overlay">
+  <div class = "items"></div>
+  <div class = "items head">
+    <p>203 N Palm Dr street,Virtous Housing, Beverly Hills,Los Angeles CA 90210
+      <br> <br>Price- 3 Billion dollars
+    </p>
+    <hr>
+  </div>
+  <div class = "items price">
+    <p>Virtous.com</p>
+    <img src="images/Screenshot 2022-05-13 121153.png" alt="" width="100px" class="img">
+  </div>
+  
+</div>
+</div>
+</td>
+<td>
+<div class="container" style="background-image:url(images/Screenshot\ 2022-04-29\ 212429.png) ;">
+  
+<div class="overlay">
+  <div class = "items"></div>
+  <div class = "items head">
+    <p>108 N Oakhurst Dr street,Virtous Housing, Beverly Hills,Los Angeles, CA 90210
+      <br> <br>Price- 12 Billion dollars
+    </p>
+    <hr>
+  </div>
+  <div class = "items price">
+    <p>Virtous.com</p>
+    <img src="images/Screenshot 2022-05-13 121153.png" alt="" width="100px" class="img">
+  </div>
+  
+</div>
+</div>
+</td>
+
+</tr>
+<tr>
+  <td>
+<div class="container" style="background-image:url(images/Screenshot\ 2022-05-18\ 130600.png) ; ">
+<div class="overlay">
+  <div class = "items"></div>
+  <div class = "items head">
+    <p>219 N Elm Dr street,Virtous Housing, Beverly Hills,Los Angeles, CA 90210
+      <br> <br>Price- 2 Billion dollars
+    </p>
+    <hr>
+  </div>
+  <div class = "items price">
+    <p>Virtous.com</p>
+    <img src="images/Screenshot 2022-05-13 121153.png" alt="" width="100px" class="img">
+  </div>
+  
+</div>
+</div>
+</td>
+<td>
+<div class="container" style="background-image:url(images/Screenshot\ 2022-05-18\ 131310.png) ;">
+<div class="overlay">
+  <div class = "items"></div>
+  <div class = "items head">
+    <p>300 N Alpine Dr street,Virtous Housing, Beverly Hills,Los Angeles, CA 90210
+      <br> <br>Price- 8 Million dollars
+    </p>
+    <hr>
+  </div>
+  <div class = "items price">
+    <p>Virtous.com</p>
+    <img src="images/Screenshot 2022-05-13 121153.png"  alt="" width="100px" class="img">
+  </div>
+  
+</div>
+</div>
+</td>
+<td>
+<div class="container" style="background-image:url(images/Screenshot\ 2022-05-26\ 093625.png) ;">
+  
+<div class="overlay">
+  <div class = "items"></div>
+  <div class = "items head">
+    <p>217 Foothill street,Virtous Housing, Beverly Hills,Los Angeles, CA 90210
+      <br> <br>Price- 9 Million dollars
+    </p>
+    <hr>
+  </div>
+  <div class = "items price">
+    <p>Virtous.com</p>
+    <img src="images/Screenshot 2022-05-13 121153.png" alt="" width="100px" class="img">
+  </div>
+  
+</div>
+</div>
+</td>
+
+</tr>
+
+<tr>
+  <td>
+<div class="container" style="background-image:url(images/Screenshot\ 2022-05-19\ 095639.png) ; ">
+<div class="overlay">
+  <div class = "items"></div>
+  <div class = "items head">
+    <p>948 N. Lilac Street,Virtous Housing ,Beverly Hills , Los Angeles, CA 07501
+      <br> <br>Price- 17 Million dollars</p>
+    <hr>
+  </div>
+  <div class = "items price">
+    <p>Virtous.com</p>
+    <img src="images/Screenshot 2022-05-13 121153.png" alt="" width="100px" class="img">
+  </div>
+  
+</div>
+</div>
+</td>
+<td>
+<div class="container" style="background-image:url(images/Screenshot\ 2022-05-19\ 094648.png);">
+<div class="overlay">
+  <div class = "items"></div>
+  <div class = "items head">
+    <p>537 Medieval ST(Vermilion Ave.),
+      Virtous Housing, Beverly Hills ,Los Angeles,CA 25010
+      <br> <br>Price- 16 Billion dollars</p>
+    <hr>
+  </div>
+  <div class = "items price">
+    <p>Virtous.com</p>
+    <img src="images/Screenshot 2022-05-13 121153.png"  alt="" width="100px" class="img">
+  </div>
+  
+</div>
+</div>
+</td>
+<td>
+<div class="container" style="background-image:url(images/Screenshot\ 2022-05-19\ 100245.png) ;">
+  
+<div class="overlay">
+  <div class = "items"></div>
+  <div class = "items head">
+    <p>4091 Grotto Street,Virtous Housing, Beverly Hills ,Los Angeles,CA 35910
+      <br> <br>Price-18 Billion dollars
+    </p>
+    <hr>
+  </div>
+  <div class = "items price">
+    <p>Virtous.com</p>
+    <img src="images/Screenshot 2022-05-13 121153.png" alt="" width="100px" class="img">
+  </div>
+  
+</div>
+</div>
+</td>
+
+</tr>
+
+<tr>
+  <td>
+<div class="container" style="background-image:url(images/Screenshot\ 2022-05-31\ 125859.png) ; ">
+<div class="overlay">
+  <div class = "items"></div>
+  <div class = "items head">
+    <p>9471 Ketch Harbour Street,Virtous Housing, Beverly Hills
+      Los Angeles, CA 46360
+      <br> <br>Price- 8 Million dollars</p>
+    <hr>
+  </div>
+  <div class = "items price">
+    <p>Virtous.com</p>
+    <img src="images/Screenshot 2022-05-13 121153.png" alt="" width="100px" class="img">
+  </div>
+  
+</div>
+</div>
+</td>
+<td>
+<div class="container" style="background-image:url(images/Screenshot\ 2022-05-26\ 093942.png);">
+<div class="overlay">
+  <div class = "items"></div>
+  <div class = "items head">
+    <p>7833 Lincoln Street(Glenwood Lane),Virtous Housing, Beverly Hills,Los Angeles, CA 01760
+      <br> <br>Price- 11 Million dollars
+    </p>
+    <hr>
+  </div>
+  <div class = "items price">
+    <p>Virtous.com</p>
+    <img src="images/Screenshot 2022-05-13 121153.png"  alt="" width="100px" class="img">
+  </div>
+  
+</div>
+</div>
+</td>
+<td>
+<div class="container" style="background-image:url(images/Screenshot\ 2022-05-20\ 114059.png) ;">
+  
+<div class="overlay">
+  <div class = "items"></div>
+  <div class = "items head">
+    <p>8 Hawthorn Street(Westport Ave.),Virtous Housing ,Beverly Hills,
+      Los Angeles, CA 14075
+      <br> <br>Price- 12 Million dollars</p>
+    <hr>
+  </div>
+  <div class = "items price">
+    <p>Virtous.com</p>
+    <img src="images/Screenshot 2022-05-13 121153.png" alt="" width="100px" class="img">
+  </div>
+  
+</div>
+</div>
+</td>
+
+</tr>
+
+<tr>
+  <td>
+<div class="container" style="background-image:url(images/Screenshot\ 2022-05-20\ 114350.png) ; ">
+<div class="overlay">
+  <div class = "items"></div>
+  <div class = "items head">
+    <p>High Ridge Street,Virtous Housing, Beverly Hills,
+      Los Angeles, CA 35173
+      <br> <br>Price- 14 Billion dollars</p>
+    <hr>
+  </div>
+  <div class = "items price">
+    <p>Virtous.com</p>
+    <img src="images/Screenshot 2022-05-13 121153.png" alt="" width="100px" class="img">
+  </div>
+  
+</div>
+</div>
+</td>
+<td>
+<div class="container" style="background-image:url(images/Screenshot\ 2022-05-26\ 092235.png);">
+<div class="overlay">
+  <div class = "items"></div>
+  <div class = "items head">
+    <p>457 Fordham St.(Lakeshore Ave.),Virtous Housing ,Beverly Hills,
+      Los Angeles, CA 37312
+      <br> <br>Price- 13 Billion dollars
+    </p>
+    <hr>
+  </div>
+  <div class = "items price">
+    <p>Virtous.com</p>
+    <img src="images/Screenshot 2022-05-13 121153.png"  alt="" width="100px" class="img">
+  </div>
+  
+</div>
+</div>
+</td>
+<td>
+<div class="container" style="background-image:url(images/Screenshot\ 2022-05-20\ 113730.png) ;">
+  
+<div class="overlay">
+  <div class = "items"></div>
+  <div class = "items head">
+    <p>948 N. Lilac Street,Virtous Housing, Beverly Hills,
+      Los Angeles, CA 07501
+      <br> <br>Price- 3 Billion dollars
+    </p>
+    <hr>
+  </div>
+  <div class = "items price">
+    <p>Virtous.com</p>
+    <img src="images/Screenshot 2022-05-13 121153.png" alt="" width="100px" class="img">
+  </div>
+  
+</div>
+</div>
+</td>
+
+</tr>
+<tr>
+  <td>
+<div class="container" style="background-image:url(images/Screenshot\ 2022-05-19\ 131348.png) ; ">
+<div class="overlay">
+  <div class = "items"></div>
+  <div class = "items head">
+    <p>778 N.Palm Angelo street,Virtous Housing,Beverly Hills,Los Angeles, CA 02195
+      <br> <br>Price- 9 Million dollars
+    </p>
+    <hr>
+  </div>
+  <div class = "items price">
+    <p>Virtous.com</p>
+    <img src="images/Screenshot 2022-05-13 121153.png" alt="" width="100px" class="img">
+  </div>
+  
+</div>
+</div>
+</td>
+<td>
+<div class="container" style="background-image:url(images/Screenshot\ 2022-05-19\ 130801.png);">
+<div class="overlay">
+  <div class = "items"></div>
+  <div class = "items head">
+    <p>3428 High Ridge Street ,Virtous Housing,Beverly Hills, Los Angeles,CA 10922
+      <br> <br>Price- 4 Million dollars
+    </p>
+    <hr>
+  </div>
+  <div class = "items price">
+    <p>Virtous.com</p>
+    <img src="images/Screenshot 2022-05-13 121153.png"  alt="" width="100px" class="img">
+  </div>
+  
+</div>
+</div>
+</td>
+<td>
+<div class="container" style="background-image:url(images/Screenshot\ 2022-05-19\ 130401.png) ;">
+  
+<div class="overlay">
+  <div class = "items"></div>
+  <div class = "items head">
+    <p>2248 Fordham street ,Virtous Housing, Beverly Hills, Los Angeles,CA 120995
+      <br> <br>Price- 18 Million dollars
+    </p>
+    <hr>
+  </div>
+  <div class = "items price">
+    <p>Virtous.com</p>
+    <img src="images/Screenshot 2022-05-13 121153.png" alt="" width="100px" class="img">
+  </div>
+  
+</div>
+</div>
+</td>
+
+</tr>
+<tr>
+  <td>
+<div class="container" style="background-image:url(images/Screenshot\ 2022-05-19\ 130126.png) ; ">
+<div class="overlay">
+  <div class = "items"></div>
+  <div class = "items head">
+    <p>6528 Hawthorn Street(Westport Ave.),Virtous Housing, Beverly Hills , Los Angeles,CA 57220
+      <br> <br>Price- 19 Million dollars
+    </p>
+    <hr>
+  </div>
+  <div class = "items price">
+    <p>Virtous.com</p>
+    <img src="images/Screenshot 2022-05-13 121153.png" alt="" width="100px" class="img">
+  </div>
+  
+</div>
+</div>
+</td>
+<td>
+<div class="container" style="background-image:url(images/Screenshot\ 2022-05-19\ 125812.png);">
+<div class="overlay">
+  <div class = "items"></div>
+  <div class = "items head">
+    <p>2245 Lincoln Street(Glenwood Lane),Virtous Housing, Beverly Hills, Los Angeles, CA 78990
+      <br> <br>Price- 64 Million dollars
+    </p>
+    <hr>
+  </div>
+  <div class = "items price">
+    <p>Virtous.com</p>
+    <img src="images/Screenshot 2022-05-13 121153.png"  alt="" width="100px" class="img">
+  </div>
+  
+</div>
+</div>
+</td>
+<td>
+<div class="container" style="background-image:url(images/Screenshot\ 2022-05-19\ 100655.png) ;">
+  
+<div class="overlay">
+  <div class = "items"></div>
+  <div class = "items head">
+    <p> 54900 N. Lilac street, Virtous Housing, Beverly Hills,
+      Los Angeles, CA 889001
+      <br> <br>Price- 17 Million dollars</p>
+    <hr>
+  </div>
+  <div class = "items price">
+    <p>Virtous.com</p>
+    <img src="images/Screenshot 2022-05-13 121153.png" alt="" width="100px" class="img">
+  </div>
+  
+</div>
+</div>
+</td>
+
+</tr>
+
+
+</table>
+    <!--Footer Section-->
+    <div class="footer">
+      <div class="col-1">
+          <h3>LINKS</h3>
+          <a href="pbl_index.html" >Home</a>
+          <a href="#">Sales</a>
+          <a href="contact_us.html">Contact Us</a>
+          <a href="about_us.html">About Us</a>
+          <a href="learnmore.html">Membership</a>
+          
+      </div>
+      <div class="col-2">
+          <h3>NEWSTITLE</h3>
+          <form action="">
+              <input type="email" placeholder="EMAIL ADDRESS" required><br>
+              <button type="submit" class="formbotton">SUBCRIBE NOW</button>
+          </form>
+      </div>
+      <div class="col-3">
+          <h3>CONTACT</h3>
+          <address><a href="https://goo.gl/maps/3w3HRNPCTA1EEgVA8" class="addressfooter"><p >Virtous Housing , Beverly Hills ,<br> Los Angeles county , California </p ></a></address>
+          <div class="social-links">
+              <i class="fa-brands fa-facebook "></i>
+              <i class="fa-brands fa-twitter "></i>
+              <i class="fa-brands fa-youtube "></i>
+              
+ 
+          
+      </div>
+      </div>
+     
+               
+    </div>
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="images/Screenshot 2022-05-13 121153.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   
+   
+    <style>
+     
+
+.header{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(22,21,21,0.65), rgba(22,21,21,0.65)),
+    url(images/MicrosoftTeams-image\ \(21\).png);
+     background-size: cover;
+    background-position: center;
+    
+}
+.pages img{
+    width: 100px;
+    height: 90px;
+    margin-left: 90px;
+    border-radius: 45px;
+    box-shadow: 5px -2px 70px -13px rgba(0,0,0,0.74);
+}
+
+
+.pages {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    background-color: rgb(28, 48, 80);
+}
+.pages ul{
+    margin-right: 80px;
+}
+.pages ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    
+}
+.pages ul li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 7px 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+.pages ul li a:hover{
+   color:rgb(255, 255, 255);
+   background-color:rgb(115, 115, 115) ;
+   padding:7px 10px ;
+   border: none;
+}
+    .map{
+     width: auto;
+  display: flex;
+    
+    height: 100%;
+    background-color: rgb(150, 150, 150);
+padding: 30px;
+ }
+ .texts{
+     border: none;
+     width: 40%;
+     height: 350px;
+     border-radius: 12px;
+     margin-left:  100px;
+     margin-top: 15px;
+ }
+ .texts h3{
+     color: rgb(0, 0, 0);
+     text-align: center;
+    padding-top: 18px;
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+ }
+ .texts form{
+     
+      padding: 15px;
+      margin-left:30px ;
+      
+ }
+.texts i{
+    color: rgb(0, 0, 0);
+    padding: 5px;
+}
+ .texts input{
+    border-radius: 6px;
+    padding: 5px;
+    width: 350px;
+    height: 35px;
+   border: none;
+   margin-bottom: 10px;
+ margin-left: 10px;
+ }
+.texts button{
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    width: 80px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+   margin-left: 34px;
+   color: white;
+}
+.texts button:hover{
+    color: rgba(53,61,104);
+    border: 2px solid rgb(53, 61, 104);
+    background: transparent;
+}
+ .map-location iframe{
+     width:90%;
+     height: 350px;
+     border-radius: 12px;
+      margin-left: 90px;
+      margin-top: 20px;
+ }
+ .info{
+    width: auto;
+    height: 100%;
+    background-color: rgba(143, 160, 187);
+    display: flex;
+    
+}  
+.info-text{
+  padding: 40px 70px;
+  color:rgb(0, 0, 0);
+  border: none;
+}
+.info-text h3{
+    text-transform: uppercase;
+    font-size: 35px;
+}
+.info-text h4{
+    padding-top: 20px;
+font-size: 20px;
+}
+.info-text p{
+    font-weight: lighter; 
+    padding-top: 16px;
+}
+.info-location{
+    display: flex;
+padding: 20px 70px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+position: absolute;
+top:180px ;
+left: 890px;
+}
+
+.info-location .info-body{
+    padding: 60px 25px;
+    border: none ;
+    background-color: #fff;
+    border-radius: 12px;
+    width: 330px;
+    height: 420px;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+
+}
+.info-body  h3{
+font-weight: bold;
+font-size: 28px;
+}
+.info-body p{
+padding: 13px 0;
+
+}
+.info-body a{
+    text-decoration: none;
+    color: black;
+}
+/*footer section*/
+.footer{
+    /*position:absolute;*/
+    margin: auto;
+    width: 100%;
+    background-color:rgb(12, 26, 95);
+    color:rgb(255, 252, 252);
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+.footer div{
+    text-align: center;
+}
+.footer div h3{
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight:400;
+}
+.footer .col-1 a{
+    text-decoration: none; 
+    display: block;
+    color: rgba(255, 255, 255, 0.988);
+    text-align: left;
+    margin-bottom: 5px;
+
+}
+
+.footer .col-2{
+    flex-grow: 0.5;
+}
+form input{
+    width: 400px;
+    height: 29px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    outline: none;
+    margin-bottom: 25px;
+}
+form button{
+     background-color: transparent;
+     color: #fff;
+     padding: 5px;
+     border: 2px solid rgb(177, 123, 123);
+     text-decoration: none;
+     border-radius: 20px;
+     font-family: 'Roboto', sans-serif;
+     font-size: 15px;
+     width: 200px;
+    
+    
+
+}
+.formbotton:hover{
+  background-color:burlywood;
+  border: 2px solid;
+}
+.social-links{
+   margin:0 10px 0;
+   font-size: 22px;
+}
+.social-links i:hover{
+   color: rgb(171, 146, 58);
+ }
+ .addressfooter{
+    text-decoration: none;
+    color: #fff;
+   
+
+}
+</style>
+</head>
+<body>
+    <div class="header">
+    <div class="pages">
+        <a href="index.html">
+            <img src="images/Screenshot 2022-05-13 121153.png" alt="" class="img"></a>
+       
+        <ul><li><a href="index.html">HOME</a></li>
+        <li><a href="sale.for_virtous.html">SALE</a></li>
+        <li><a href="#">CONTACT US</a></li>
+        <li><a href="about_us.html">ABOUT US</a></li>
+        <li><a href="learnmore.html">MEMBERSHIP</a></li></ul>
+    </div>
+</div>
+    <div class="info">
+        <div class="info-text">
+            <h3>Find your future home with us!</h3>
+           
+            <h4>In our Virtous Real Estate Group , we have high standarded houses<br> for you to offer from us.</h4>
+            <p>We have been working in this industry for so long , we can provide you a comfortable and safe place that you can rely on.
+                <br>Come find your future home with us ,Virtous.
+            </p>
+        </div>
+        <div class="info-location">
+            <div class="info-body">
+                <h3>CALL US</h3>
+                <p>09-123456789<br>09-24681057</p>
+            <h3>LOCATION</h3>
+<a href="https://goo.gl/maps/3w3HRNPCTA1EEgVA8"><p>Virtous Housing , Beverly Hills ,<br> Los Angeles county , California</p></a>
+            <h3>Business Hours </h3>
+            <p>Monday to Friday [ 8am to 10pm ]<br>
+            Saturday and Sunday [ 8am to 8pm ]</p>
+            </div>
+        </div>
+    </div>
+    <div class="map">
+        <div class="texts">
+            <h3>Contact us to ask anything to know about us more!</h3>
+        <form action="get">
+            <i class="fa-solid fa-user"></i><input type="text" name="" placeholder="ENTER YOUR NAME.."><br>
+            <i class="fa-solid fa-envelope"></i><input type="email" name="" placeholder="ENTER YOUR EMAIL.."><br>
+            <i class="fa-solid fa-comments" style="padding-right: 0"></i><input type="text" name="" placeholder="ANY MESSAGES YOU WANT TO WRITE.." style="width:350px; height:100px;"><br>
+        <button>SEND</button></form></div>
+        <div class="map-location">
+           
+        </div>
+    </div>
+  </table>
+  <div class="footer">
+    <div class="col-1">
+        <h3>LINKS</h3>
+        <a href="index.html" >Home</a>
+        <a href="sale.for_virtous.html">Sales</a>
+        <a href="#">Contact Us</a>
+        <a href="about_us.html">About Us</a>
+        <a href="learnmore.html">Membership</a>
+        
+    </div>
+    <div class="col-2">
+        <h3>NEWSTITLE</h3>
+        <form action="">
+            <input type="email" placeholder="EMAIL ADDRESS" required><br>
+            <button type="submit" class="formbotton">SUBCRIBE NOW</button>
+        </form>
+    </div>
+    <div class="col-3">
+        <h3>CONTACT</h3>
+        <address><a href="https://goo.gl/maps/3w3HRNPCTA1EEgVA8" class="addressfooter"><p >Virtous Housing , Beverly Hills ,<br> Los Angeles county , California </p ></a></address>
+
+        <div class="social-links">
+            <i class="fa-brands fa-facebook "></i>
+            <i class="fa-brands fa-twitter "></i>
+            <i class="fa-brands fa-youtube "></i>
+            
+
+        
+    </div>
+    </div>
+   
+             
+  </div>
+</body>
+</html>
+

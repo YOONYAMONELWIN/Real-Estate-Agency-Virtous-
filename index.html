@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Virtous</title>
+    
+    <link rel="shortcut icon" href="images/Screenshot 2022-05-13 121153.png">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    
+}
+.header{
+    width: auto;
+    height: 100%;
+    background-image: linear-gradient(rgba(22,21,21,0.65), rgba(22,21,21,0.65)),
+    url(images/MicrosoftTeams-image\ \(21\).png);
+     background-size: cover;
+    background-position: center;
+    
+}
+.pages img{
+    width: 100px;
+    height: 90px;
+    margin-left: 90px;
+    border-radius: 45px;
+    box-shadow: 5px -2px 70px -13px rgba(0,0,0,0.74);
+}
+.pages {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    background-color: rgb(28, 48, 80);
+}
+.pages ul{
+    margin-right: 80px;
+}
+.pages ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    
+}
+.pages ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+    padding: 7px 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+.pages ul li a:hover{
+color:rgb(255, 255, 255);
+
+background-color: rgb(128, 124, 124);
+padding: 7px 10px;
+border: none;
+}
+
+
+.text{
+    margin-bottom: 70px;
+}
+.text h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    padding-top: 90px;
+    color:#fff;
+}
+.text p{
+    padding-top: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+}
+.text hr{
+    width: 590px;
+    margin-left: 470px;
+    color: rgb(128, 124, 124);
+    margin-top: 13px;
+    
+
+}
+.text h3{
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 30px;
+    font-weight: lighter;
+}
+
+.contents{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+.text-content{
+    border: none;
+    color: rgb(248, 242, 242);
+    width: 540px;
+    height: 300px;
+    border-radius: 12px;
+    margin-right: 120px;
+   background-color: transparent;
+   font-family: 'Source Serif Pro', serif;
+
+  
+   margin-bottom: 50px;
+}
+.text-content img{
+    margin: 6px 205px;
+    width: 115px;
+    height: 100px;
+    border-radius: 105px; 
+
+}
+.first-content{
+    padding:6px 10px ;
+    text-align: left;
+    margin-top: 70px;
+    font-family: 'Source Serif Pro', serif;
+    
+    margin-left: 80px;
+}
+.text-content h4{
+    padding-bottom: 10px;
+    font-size: 28px;
+    text-align: left;
+       } 
+       .text-content p{
+           color: rgb(255, 255, 255);
+           width: 500px;
+           margin-bottom: 25px;
+           line-height: 24px;
+    font-family: 'Source Serif Pro', serif;
+
+       }
+
+
+.text-content a {
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+    font-size: 13px;
+    border: 1px rgb(212, 211, 211) solid;
+    padding: 13px 10px;
+    border-radius: 6px;
+    background-color: transparent;
+   
+}
+
+.text-content  a:hover{
+    color: white;
+    background-color:rgb(128, 124, 124);
+    border: none;
+}
+.sec-content{
+    border: none;
+    width:340px;
+    border-radius: 12px;
+    
+    height: 300px;
+    margin-left: 170px;
+    background-color: rgb(212, 211, 211);
+   
+}
+.sec-content img{
+    margin: 6px 105px;
+    width: 115px;
+    height: 100px;
+    border-radius: 105px; 
+
+    }
+
+ .sec-content .content-text{
+padding: 6px 20px;
+text-align: left;
+}
+   .content-text h4{
+padding-bottom: 10px;
+font-size: 18px;
+
+   } 
+   .content-text p{
+       color: black;
+       margin-bottom: 25px;
+       line-height: 24px;
+   }
+
+.content-text a{
+    text-decoration: none;
+    padding: 13px 14px;
+    border:1px rgb(212, 211, 211) solid;
+    border-radius: 6px;
+    background-color: rgb(197, 195, 195);
+    font-size: 13px;
+    color: black;
+    margin-bottom: 15px;
+}
+.content-text a:hover{
+    color: #fff;
+    background-color: rgb(128, 124, 124);
+}
+.content{
+   background-color: rgba(143, 160, 187); 
+     width: 100%;
+     height: auto;
+     
+     
+ }
+ .content h3{
+     padding: 30px 40px;
+     padding-top: 50px;
+ }
+ .cards-house{
+      display: flex;
+      margin: 20px 50px;
+      padding: 0 4px;
+      margin-bottom: 50px;
+ }
+ .cards-house div:hover{
+
+       box-shadow: rgba(137, 137, 150, 0.75) 0px 20px 36px, rgba(122, 122, 131, 0.75) 0px 12px 36px, 
+    rgba(129, 129, 141, 0.75) 0px 4px 6px, rgba(147, 147, 156, 0.75) 0px 2px 3px;
+    
+ }
+ 
+ .cards-house a{
+     text-decoration: none;
+     color:black;
+ }
+ .cards-house hr{
+     color: rgb(209, 202, 202);
+ }
+  .house-1{
+       width: 250px;
+       height: 100%;
+       border: none ;
+       background-color: gainsboro;
+       border-radius: 12px;
+       margin-right: 43px;
+       margin-left: 80px;
+       
+       
+ 
+  }   
+ 
+.house-1 img{
+    width: 190px;
+    height: 150px;
+    margin: 10px ;
+   margin-left: 30px;
+   border-radius: 6px;
+  
+}
+.house-1 p{
+    padding-top: 5px;
+    height: 36px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.house-2{
+    width: 280px;
+    height: 100%;
+     border: none ;
+     background-color: gainsboro;
+     border-radius: 12px;
+     margin-right: 53px;
+     
+}
+
+.house-2 img{
+    width: 190px;
+    height: 150px;
+    margin: 10px ;
+   margin-left: 40px;
+   border-radius: 6px;
+}
+.house-2 p{
+    padding-top: 5px;
+    height: 36px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+}
+.house-3{
+   
+    width: 280px;
+    height: 100%;
+     border: none ;
+     background-color: gainsboro;
+     border-radius: 12px;
+     margin-right: 50px;
+     
+}
+
+.house-3 img{
+    width: 135px;
+    height: 150px;
+    margin: 10px ;
+   margin-left: 70px;
+   border-radius: 6px;
+}
+.house-3 p{
+    padding-top: 5px;
+    height: 36px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.house-4{
+    width: 280px;
+    height:100%;
+     border: none ;
+     background-color: gainsboro;
+     border-radius: 12px;
+     margin-right: 50px;
+    
+}
+
+.house-4 img{
+    width: 110px;
+    height: 150px;
+    margin: 10px ;
+   margin-left: 80px;
+   border-radius: 6px;
+   
+}
+.house-4 p{
+    padding-top: 5px;
+    height: 36px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+}
+ .content .btn{
+    width: 100%;
+    height: 100%;
+   padding-bottom:50px ;
+   padding-left: 80px;
+    
+}
+  .btn a {
+    text-decoration: none;
+    background-color:rgb(197, 195, 195) ;
+    color: black;
+    border: none;
+    padding:13px 14px ;
+    font-size: 13px;
+    border-radius: 6px;
+  margin: 0 600px;
+   
+}
+.btn a:hover{
+    color: #fff;
+    background-color:rgb(128, 124, 124) ;
+}
+.footer{
+
+/*position:absolute;*/
+
+margin: 0;
+
+width:100%;
+height: 100%;
+background-color:rgb(12, 26, 95);
+
+color:rgb(255, 252, 252);
+
+padding: 30px 160px;
+
+
+
+justify-content: center;
+
+
+
+}
+
+.footer div{
+
+text-align: center;
+
+font-size: 20px;
+}
+.footers{
+display: flex;
+
+}
+.footer div h3{
+
+margin-bottom: 30px;
+
+letter-spacing: 1px;
+
+font-weight:400;
+
+}
+.footer .col-1{
+margin-left: 100px;
+}
+.footer .col-1 a{
+
+text-decoration: none;
+
+display: block;
+
+color: rgba(255, 255, 255, 0.988);
+
+text-align: left;
+
+margin-bottom: 5px;
+
+
+
+}
+
+
+
+.footer .col-2{
+
+flex-grow: 0.5;
+margin: 0 130px;
+
+
+}
+
+form input{
+
+width: 400px;
+
+height: 29px;
+
+border-radius: 5px;
+
+text-align: center;
+
+border: none;
+
+outline: none;
+
+margin-bottom: 25px;
+
+}
+form button{
+
+background-color: transparent;
+
+color: #fff;
+
+padding: 5px;
+
+border: 2px solid rgb(177, 123, 123);
+
+text-decoration: none;
+
+border-radius: 20px;
+
+font-family: 'Roboto', sans-serif;
+
+font-size: 15px;
+
+width: 200px;
+
+
+
+
+
+
+
+}
+
+.formbotton:hover{
+
+background-color:burlywood;
+
+border: 2px solid;
+
+}
+.social-links{
+
+margin-left: 20px;
+margin-top: 20px;
+
+font-size: 22px;
+
+}
+
+.social-links i:hover{
+
+color: rgb(171, 146, 58);
+
+}
+.addressfooter{
+    text-decoration: none;
+    color: #fff;
+   
+
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="pages">
+            <a href="index.html">
+                <img src="images/Screenshot 2022-05-13 121153.png" alt="" class="img"></a>
+            
+            <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="sale.for_virtous.html">SALE</a></li>
+            <li><a href="contact_us.html">CONTACT US</a></li>
+            <li><a href="about_us.html">ABOUT US</a></li>
+            <li><a href="learnmore.html">MEMBERSHIP</a></li></ul>
+        </div>
+        <div class="text">
+        <h2>We Have Los Angeles Covered </h2>
+        <hr>
+        <h3>Houses for sale in LA</h3>
+        <p>Contact with our agents to start your dream of home ownership.</p>
+        
+    </div>
+<div class="contents">
+        <div class="text-content">
+            
+        <div class="first-content">
+            <h4>Welcome to virtous</h4>
+<p>
+This beauty of a home is here for you! With rooms to spare for every family member and friend.
+
+We want to help you make a confident and informed decision about buying with a trusted expert on your 
+side! If you would like to learn more about the pros and cons of our estate, reach out to us today!
+</p>
+<a href="learnmore.html">Learn More</a></div></div>
+<div class="sec-content">
+    <img src="images/MicrosoftTeams-image (20).png"><hr>
+    <div class="content-text">
+    <h4>Explore More About Our Houses</h4>
+    <p>Check out the different neighbourhoods in LA and find out the right one for you and your significant others.</p>
+    <a href="sale.for_virtous.html">See More</a> 
+
+</div>
+</div>      
+    </div></div>
+    
+    <div class="content">
+        <h3>Our Latest Projects</h3>
+        <div class="cards-house">
+        <a href="sale.for_virtous.html"><div class="house-1">
+            <img src="images/Screenshot 2022-05-17 205634.png">
+            <hr>
+            <p>203 N Palm Dr street,Virtous Housing, Beverly Hills,Los Angeles CA 90210</p>
+        
+            <p>Price- 3 Billion dollars</p>
+        </div></a>
+       <a href="sale.for_virtous.html"> <div class="house-2">
+            <img src="images/Screenshot 2022-05-20 114059.png">
+            <hr>
+            <p>8 Hawthorn Street(Westport Ave.),Virtous Housing ,Beverly Hills,
+                Los Angeles, CA 14075</p>
+                <p>Price- 12 Million dollars</p></div></a>
+        
+       <a href="sale.for_virtous.html"><div class="house-3">
+            <img src="images/Screenshot 2022-05-19 131348.png"><hr>
+            <p>778 N.Palm Angelo street,Virtous Housing,Beverly Hills,Los Angeles, CA 02195</p>
+            <p>Price- 9 Million dollars</p>
+        </div></a>
+        <a href="sale.for_virtous.html"><div class="house-4">
+            <img src="images/Screenshot 2022-05-26 092235.png"><hr>
+            <p>457 Fordham St.(Lakeshore Ave.),Virtous Housing ,Beverly Hills,
+                Los Angeles, CA 37312
+          
+         </p>
+            <p> Price- 13 Billion dollars</p></div>
+        </a></div>
+    <div class="btn">
+       <a href="sale.for_virtous.html" >See More Houses</a> 
+    </div>
+</div>
+    <div class="footer">
+        <div class="footers">
+        <div class="col-1">
+            <h3>LINKS</h3>
+            <a href="#" >Home</a>
+            <a href="sale.for_virtous.html">Sales</a>
+            <a href="contact_us.html">Contact Us</a>
+            <a href="about_us.html">About Us</a>
+            <a href="learnmore.html">Membership</a>
+        </div>
+        <div class="col-2">
+            <h3>NEWSTITLE</h3>
+            <form action="">
+                <input type="email" placeholder="EMAIL ADDRESS" required><br>
+                <button type="submit" class="formbotton">SUBCRIBE NOW</button></div>
+            </form>
+            <div class="col-3">
+                <h3>CONTACT</h3>
+                <address><a href="https://goo.gl/maps/3w3HRNPCTA1EEgVA8" class="addressfooter"><p >Virtous Housing , Beverly Hills ,<br> Los Angeles county , California </p ></a></address>
+                    <div class="social-links">
+                        <i class="fa-brands fa-facebook "></i>
+                        <i class="fa-brands fa-twitter "></i>
+                        <i class="fa-brands fa-youtube "></i>
+                        
+           
+                    
+                </div>
+            </div>
+        </div>
+        </body>
+            </html>
